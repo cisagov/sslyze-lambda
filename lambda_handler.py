@@ -1,7 +1,5 @@
 import logging
 
-from sslyze.concurrent_scanner import ConcurrentScanner
-from sslyze.concurrent_scanner import PluginRaisedExceptionScanResult
 from sslyze.plugins.certificate_info_plugin import CertificateInfoScanCommand
 from sslyze.plugins.openssl_cipher_suites_plugin import Tlsv10ScanCommand
 from sslyze.plugins.openssl_cipher_suites_plugin import Tlsv11ScanCommand
@@ -129,11 +127,11 @@ def handler(event, context):
                                                  port=port,
                                                  tls_wrapped_protocol=protocol)
         server_info = server_tester.perform(network_timeout=timeout)
-    except ServerConnectivityError as err:
+    except ServerConnectivityError:
         logging.error('Unable to connect to {}:{}'.format(hostname, port),
                       exc_info=True, stack_info=True)
         return None
-    except Exception as err:
+    except Exception:
         logging.error('Unable to connect to {}:{}'.format(hostname, port),
                       exc_info=True, stack_info=True)
         return None
