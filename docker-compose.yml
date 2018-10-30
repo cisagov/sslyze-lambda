@@ -1,0 +1,8 @@
+version: '3.2'
+
+services:
+  build_sslyze_lambda:
+    build: .
+    image: 'dhsncats/build_sslyze_lambda'
+    volumes:
+      - .:/output
