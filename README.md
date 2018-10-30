@@ -1,4 +1,4 @@
-# sslyze-lambda :postal_horn: :mailbox: #
+# sslyze-lambda :lock: :key: #
 
 [![Build Status](https://travis-ci.com/dhs-ncats/sslyze-lambda.svg?branch=develop)](https://travis-ci.com/dhs-ncats/sslyze-lambda)
 
