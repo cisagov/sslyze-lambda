@@ -60,7 +60,7 @@ def handler(event, context):
       is used.
     * starttls_smtp - A boolean value denoting whether to try to use
       STARTTLS after connecting to an SMTP server.  This option should
-      be True is connecting to an SMTP host and otherwise false.  If
+      be True is connecting to an SMTP host and otherwise False.  If
       omitted then the default value of False is used.
     * scan_tlsv10 - A boolean value denoting whether to scan for TLS
       version 1.0 ciphers. If omitted then the default value of False
