@@ -1,6 +1,6 @@
 # sslyze-lambda :lock: :key: #
 
-[![Build Status](https://travis-ci.com/dhs-ncats/sslyze-lambda.svg?branch=develop)](https://travis-ci.com/dhs-ncats/sslyze-lambda)
+[![Build Status](https://travis-ci.com/cisagov/sslyze-lambda.svg?branch=develop)](https://travis-ci.com/cisagov/sslyze-lambda)
 
 `sslyze-lambda` contains code to build an AWS Lambda function that
 utilizes [`sslyze`](https://github.com/nabla-c0d3/sslyze) to check
@@ -9,7 +9,7 @@ that hosts are not using outdated or insecure cryptographic ciphers.
 ## Example ##
 
 Building the AWS Lambda zip file:
-1. `cd ~/dhs-ncats/sslyze-lambda`
+1. `cd ~/cisagov/sslyze-lambda`
 2. `docker-compose down`
 2. `docker-compose build`
 3. `docker-compose up`
